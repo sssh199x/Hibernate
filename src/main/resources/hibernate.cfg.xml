@@ -1,0 +1,21 @@
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database Connection Settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/Demo</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">5890</property>
+
+        <!-- Instead of create which:( Drops and creates the schema each time your application starts (all data will be lost)).update will update your schema when needed without dropping the tables and losing data. For production environments, validate or none is typically recommended after you've created your schema.-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+        <!-- Show default Sql queries -->
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+    </session-factory>
+</hibernate-configuration>
