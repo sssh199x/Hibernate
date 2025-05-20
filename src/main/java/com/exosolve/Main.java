@@ -13,6 +13,8 @@ public class Main {
         student.setRollNo(70);
         student.setsName("Bibek");
         student.setsAge(30);
+
+
        // The .configure() will load the hibernate.cfg.xml, where we have the details about our database.
         SessionFactory sessionFactory = new Configuration()
                 .addAnnotatedClass(com.exosolve.Student.class)
