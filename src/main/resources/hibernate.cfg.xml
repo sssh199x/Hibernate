@@ -8,7 +8,7 @@
         <property name="hibernate.connection.password">5890</property>
 
         <!-- Instead of create which:( Drops and creates the schema each time your application starts (all data will be lost)).update will update your schema when needed without dropping the tables and losing data. For production environments, validate or none is typically recommended after you've created your schema.-->
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
         <!-- Echo all executed SQL to stdout -->
         <property name="hibernate.show_sql">true</property>
         <!-- Show default Sql queries -->
