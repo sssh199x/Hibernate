@@ -37,8 +37,8 @@ public class OneToManyMapping {
 
 
         try (SessionFactory sessionFactory = new Configuration()
-                .addAnnotatedClass(OneToManyAlienEntity.class)
-                .addAnnotatedClass(OneToManyLaptopEntity.class)
+                .addAnnotatedClass(com.exosolve.OneToManyAlienEntity.class)
+                .addAnnotatedClass(com.exosolve.OneToManyLaptopEntity.class)
                 .configure("hibernate.cfg.xml")
                 .buildSessionFactory()) {
 
